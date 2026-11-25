@@ -24,7 +24,7 @@ TanStack Start (React) を Cloudflare Workers で動かす、個人開発用テ�
 
 ## 作業完了の条件
 
-`pnpm check` と `pnpm build` が成功すること。画面に影響する変更は、ブラウザでの表示も確認する。
+`pnpm check` と `pnpm build` が成功すること (CI も同じ 2 つを実行する)。画面に影響する変更は、ブラウザでの表示も確認する。
 ルートを追加、削除、改名したときは、先に `pnpm build` を実行する (`src/routeTree.gen.ts` が古いと型エラーになる)。
 
 ## ディレクトリ構成

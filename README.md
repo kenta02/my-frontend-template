@@ -34,9 +34,14 @@ pnpm check
 pnpm build
 ```
 
+## CI
+
+プルリクエストと `main` への push で、GitHub Actions が `pnpm check` と `pnpm build` を実行する (`.github/workflows/ci.yml`)。
+失敗したプルリクエストのマージを禁止したい場合は、GitHub のブランチ保護を設定する (テンプレートから作ったリポジトリには引き継がれない)。
+
 ## デプロイ
 
-CI は未整備なので、手元からデプロイする。
+自動デプロイはないので、手元からデプロイする。
 
 ```sh
 pnpm exec wrangler login   # 初回のみ
