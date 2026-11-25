@@ -1,0 +1,4 @@
+# インストール時のスクリプト実行を許可するパッケージ
+allowBuilds:
+  esbuild: true
+  workerd: true
