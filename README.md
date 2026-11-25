@@ -10,7 +10,8 @@ TanStack Start + Cloudflare Workers + TypeScript 7 の、個人開発用テン�
 ## 始め方
 
 1. このリポジトリをテンプレートにして、新しいリポジトリを作る。
-2. 依存を入れて起動する。
+2. VS Code を使う場合は、推奨される拡張機能を入れる (`.vscode/extensions.json`)。
+3. 依存を入れて起動する。
 
 ```sh
 pnpm install
@@ -21,6 +22,7 @@ pnpm dev
 
 - `package.json` の `name`
 - `wrangler.jsonc` の `name` と `vars` (変えたら `pnpm cf-typegen`)
+- 見本は `vars` の `GREETING` を使っている。削除する場合は、`src/server/greeting.ts`、`src/lib/greeting.ts` とそのテスト、`src/routes/index.tsx` の呼び出しも削除か置き換える
 - `src/routes/__root.tsx` の `title`
 - この README と `AGENTS.md` の冒頭
 - `docs/superpowers/` (テンプレート作りの記録) は削除する
