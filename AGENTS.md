@@ -42,10 +42,10 @@ TanStack Start (React) を Cloudflare Workers で動かす、個人開発用テ�
 
 ## TypeScript が 2 版入っている理由
 
-| `package.json` の名前 | 中身                             | 使う側                       |
-| --------------------- | -------------------------------- | ---------------------------- |
-| `@typescript/native`  | TypeScript 7                     | `tsc` (型チェック) |
-| `typescript`          | `@typescript/typescript6` (TS 6) | ESLint (typescript-eslint)   |
+| `package.json` の名前 | 中身                             | 使う側                     |
+| --------------------- | -------------------------------- | -------------------------- |
+| `@typescript/native`  | TypeScript 7                     | `tsc` (型チェック)         |
+| `typescript`          | `@typescript/typescript6` (TS 6) | ESLint (typescript-eslint) |
 
 typescript-eslint が TS 7.0 を読み込めないための措置。この 2 行を「整理」して 1 つにしない。
 typescript-eslint が TS 7 系に対応したら、別名をやめて `typescript` を 7 系だけにする。
