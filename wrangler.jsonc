@@ -6,6 +6,6 @@
   "compatibility_flags": ["nodejs_compat"],
   "observability": { "enabled": true },
   "vars": {
-    "GREETING": "Hello from Cloudflare Workers"
-  }
+    "GREETING": "Hello from Cloudflare Workers",
+  },
 }
