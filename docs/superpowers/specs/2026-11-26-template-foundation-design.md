@@ -98,7 +98,7 @@ pnpm を使う。
 | `pnpm check` | format:check、lint、typecheck、test をまとめて実行 |
 | `pnpm run deploy` | ビルドして `wrangler deploy` |
 
-### CI/CD
+### CI/CD (今回は後回し。2026-11-26 の持ち主の指示)
 
 - プルリクエストと `main` への push で、`check` と `build` を実行する。
 - `main` への push では、成功後にデプロイする。`CLOUDFLARE_API_TOKEN` と `CLOUDFLARE_ACCOUNT_ID` が未設定のリポジトリでは、デプロイを飛ばして成功扱いにする(テンプレートから作った直後に CI が赤くならないようにするため)。
